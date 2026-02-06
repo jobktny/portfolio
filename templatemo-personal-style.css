@@ -19,7 +19,7 @@ https://templatemo.com/tm-593-personal-shape
 
 /* Footer */
 .footer {
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #312e81 100%);
+    background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #1E3A8A 100%);
     color: var(--text-light);
     padding: 3rem 0 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -45,8 +45,8 @@ https://templatemo.com/tm-593-personal-shape
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 20% 80%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.08) 0%, transparent 50%);
+    background: radial-gradient(circle at 20% 80%, rgba(30, 58, 138, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(124, 58, 237, 0.1) 0%, transparent 50%);
 }
 
 .footer-content {
@@ -125,29 +125,28 @@ https://templatemo.com/tm-593-personal-shape
 }
 
 :root {
-    /* Cyber AI Dark Mode palette */
-    --primary-color: #00F0FF;
-    /* cyan accent */
-    --secondary-color: #8B5CF6;
+    /* Deep navy / slate / blue / violet palette */
+    --primary-color: #1E3A8A;
+    /* deep blue */
+    --secondary-color: #7C3AED;
     /* violet accent */
-    --accent-color: #00F0FF;
-    --accent-pink: #8B5CF6;
-    --accent-cyan: #00F0FF;
+    --accent-color: #7C3AED;
+    --accent-pink: #7C3AED;
+    --accent-cyan: #1E3A8A;
     --text-primary: #E5E7EB;
-    /* light gray text */
     --text-secondary: #9CA3AF;
     --text-light: #F9FAFB;
-    --bg-primary: #0A0A0F;
-    /* deep navy background */
+    --bg-primary: #0B0F19;
+    /* deep navy */
     --bg-secondary: #111827;
-    /* slightly lighter panels */
-    --bg-dark: #020617;
-    --bg-card: rgba(15, 23, 42, 0.95);
-    --gradient-primary: linear-gradient(135deg, #00F0FF 0%, #8B5CF6 100%);
-    --gradient-secondary: linear-gradient(135deg, #0A0A0F 0%, #111827 40%, #00F0FF 75%, #8B5CF6 100%);
-    --gradient-tertiary: linear-gradient(135deg, #111827 0%, #00F0FF 60%, #8B5CF6 100%);
-    --gradient-elegant: linear-gradient(135deg, #0A0A0F 0%, #111827 35%, #00F0FF 70%, #8B5CF6 100%);
-    --gradient-logo: linear-gradient(135deg, #E5E7EB 0%, #00F0FF 45%, #8B5CF6 100%);
+    /* slate blue */
+    --bg-dark: #060B12;
+    --bg-card: rgba(11, 15, 25, 0.95);
+    --gradient-primary: linear-gradient(135deg, #1E3A8A 0%, #7C3AED 100%);
+    --gradient-secondary: linear-gradient(135deg, #0B0F19 0%, #111827 40%, #1E3A8A 75%, #7C3AED 100%);
+    --gradient-tertiary: linear-gradient(135deg, #111827 0%, #1E3A8A 60%, #7C3AED 100%);
+    --gradient-elegant: linear-gradient(135deg, #0B0F19 0%, #111827 35%, #1E3A8A 70%, #7C3AED 100%);
+    --gradient-logo: linear-gradient(135deg, #E5E7EB 0%, #1E3A8A 45%, #7C3AED 100%);
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -171,7 +170,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(10, 10, 15, 0.95);
+    background: rgba(11, 15, 25, 0.95);
     backdrop-filter: blur(20px);
     z-index: 1000;
     padding: 1rem 0;
@@ -180,7 +179,7 @@ nav {
 }
 
 nav.scrolled {
-    background: rgba(10, 10, 15, 0.98);
+    background: rgba(11, 15, 25, 0.98);
     box-shadow: var(--shadow-lg);
     padding: 0.75rem 0;
 }
@@ -286,7 +285,7 @@ nav.scrolled {
     right: -100%;
     width: 100%;
     height: 100vh;
-    background: rgba(15, 23, 42, 0.98);
+    background: rgba(17, 24, 39, 0.98);
     backdrop-filter: blur(20px);
     display: flex;
     flex-direction: column;
@@ -761,7 +760,7 @@ section {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.05) 0%, transparent 50%);
+    background: radial-gradient(circle at 10% 20%, rgba(124, 58, 237, 0.05) 0%, transparent 50%);
 }
 
 .about-content {
@@ -973,7 +972,7 @@ section {
 }
 
 .uni-website-btn:hover {
-    background: var(--primary-dark, #4338ca);
+    background: var(--primary-dark, #1E3A8A);
     transform: translateY(-1px);
 }
 
@@ -996,7 +995,7 @@ section {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(99, 102, 241, 0.3) 0%, rgba(139, 92, 246, 0.2) 100%);
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.3) 0%, rgba(124, 58, 237, 0.2) 100%);
     transition: opacity 0.3s ease;
 }
 
@@ -1036,7 +1035,7 @@ section {
     border-radius: 30px;
     font-size: 0.9rem;
     font-weight: 600;
-    border: 1px solid rgba(99, 102, 241, 0.2);
+    border: 1px solid rgba(124, 58, 237, 0.2);
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
 }
@@ -1128,7 +1127,7 @@ section {
 }
 
 .portfolio-item:hover .portfolio-image::before {
-    background: linear-gradient(135deg, rgba(99, 102, 241, 0.4) 0%, rgba(139, 92, 246, 0.3) 100%);
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.4) 0%, rgba(124, 58, 237, 0.3) 100%);
 }
 
 .portfolio-content {
@@ -1172,7 +1171,7 @@ section {
 
 /* Contact Section */
 .contact {
-    background: linear-gradient(135deg, #3b4cb8 0%, #4a2c65 50%, #9c35a8 100%);
+    background: linear-gradient(135deg, #0B0F19 0%, #111827 40%, #1E3A8A 70%, #7C3AED 100%);
     color: var(--text-light);
     position: relative;
     overflow: hidden;
@@ -1199,7 +1198,7 @@ section {
     bottom: 0;
     background: radial-gradient(circle at 25% 75%, rgba(255, 255, 255, 0.08) 0%, transparent 50%),
         radial-gradient(circle at 75% 25%, rgba(255, 255, 255, 0.06) 0%, transparent 50%),
-        radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
+        radial-gradient(circle at 50% 50%, rgba(124, 58, 237, 0.1) 0%, transparent 70%);
     animation: contactPulse 6s ease-in-out infinite alternate;
 }
 
@@ -1585,7 +1584,7 @@ section {
     outline: none;
     background: rgba(255, 255, 255, 0.12);
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
 }
 
 .form-group input::placeholder,
@@ -1609,7 +1608,7 @@ section {
 
 .submit-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 20px 40px rgba(99, 102, 241, 0.3);
+    box-shadow: 0 20px 40px rgba(124, 58, 237, 0.3);
 }
 
 .contact-info-section {
@@ -1685,7 +1684,7 @@ section {
 
 .contact-cta-link:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(0, 240, 255, 0.3);
+    box-shadow: 0 10px 30px rgba(124, 58, 237, 0.3);
 }
 
 /* Animation Classes */
