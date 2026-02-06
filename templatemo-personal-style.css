@@ -231,8 +231,13 @@ https://templatemo.com/tm-593-personal-shape
             border-radius: 1px;
         }
 
-        .nav-links a:hover::after {
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
             width: 100%;
+        }
+
+        .nav-links a.active {
+            color: var(--primary-color);
         }
 
         /* Mobile Menu */
@@ -333,6 +338,21 @@ https://templatemo.com/tm-593-personal-shape
             background: var(--gradient-elegant);
             position: relative;
             overflow: hidden;
+        }
+
+        .hero.hero-short {
+            height: 50vh;
+            min-height: 280px;
+        }
+
+        .hero.hero-short .hero-content .subtitle,
+        .hero.hero-short .cta-button,
+        .hero.hero-short .scroll-indicator {
+            display: none;
+        }
+
+        .hero.hero-short h1 {
+            font-size: 3rem;
         }
 
         .hero::before {
@@ -667,6 +687,50 @@ https://templatemo.com/tm-593-personal-shape
 
         .about-image:hover {
             transform: rotate(0deg) scale(1.02);
+        }
+
+        /* Experience / Education list (inner pages) */
+        .content-section {
+            background: var(--bg-secondary);
+            position: relative;
+        }
+
+        .timeline-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline-item {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow-md);
+            border-left: 4px solid var(--primary-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .timeline-item:hover {
+            transform: translateX(8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .timeline-item h3 {
+            color: var(--text-primary);
+            font-size: 1.25rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .timeline-item .meta {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .timeline-item p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin: 0;
         }
 
         .about-image::before {
