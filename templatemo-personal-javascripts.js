@@ -102,7 +102,9 @@ https://templatemo.com/tm-593-personal-shape
         });
 
         // Enhanced form submission with better UX
-        document.querySelector('.contact-form').addEventListener('submit', (e) => {
+        const contactForm = document.querySelector('.contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
             const submitBtn = document.querySelector('.submit-btn');
             const originalText = submitBtn.textContent;
@@ -127,10 +129,11 @@ https://templatemo.com/tm-593-personal-shape
                     submitBtn.textContent = originalText;
                     submitBtn.disabled = false;
                     submitBtn.style.background = '';
-                    document.querySelector('.contact-form').reset();
+                    contactForm.reset();
                 }, 3000);
             }, 2000);
         });
+        }
 
         // Enhanced parallax effect for hero background
         let ticking = false;
