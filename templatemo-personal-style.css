@@ -1831,6 +1831,9 @@ section {
 .contact-logo-mail {
     background: #d64a3a;
     line-height: 1;
+    color: #fff;
+    font-size: 1.9rem;
+    font-weight: 700;
 }
 
 .contact-hero-resume {
