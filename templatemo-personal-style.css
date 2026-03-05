@@ -65,6 +65,17 @@ https://templatemo.com/tm-593-personal-shape
     margin: 0;
 }
 
+.footer-center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-center p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.0rem;
+    margin: 0;
+}
+
 .footer-right {
     display: flex;
     gap: 2rem;
@@ -361,7 +372,7 @@ nav.scrolled {
 }
 
 .hero.hero-short {
-    height: 50vh;
+    height: 10vh;
     min-height: 280px;
 }
 
@@ -596,6 +607,7 @@ nav.scrolled {
     position: relative;
     max-width: 900px;
     padding: 0 2rem;
+    padding-top: 80px;
 }
 
 .hero-subtitle {
@@ -712,7 +724,9 @@ nav.scrolled {
 
 /* Section Styles */
 section {
-    padding: 8rem 0;
+    padding: 0rem 0;
+    padding-top: 15px;
+    padding-bottom: 30px;
 }
 
 .container {
@@ -755,6 +769,10 @@ section {
     position: relative;
 }
 
+.page-home .about {
+    padding-top: 7.5rem;
+}
+
 .about::before {
     content: '';
     position: absolute;
@@ -790,14 +808,123 @@ section {
     transform: rotate(0deg) scale(1.02);
 }
 
+/* Home social links */
+.home-social-links {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    margin: 0.5rem 0 1.25rem;
+}
+
+.home-social-link {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.7rem;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.home-social-link svg {
+    width: 26px;
+    height: 26px;
+    fill: currentColor;
+}
+
+.home-social-link:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.08);
+}
+
+.home-social-github {
+    background: #171717;
+}
+
+.home-social-linkedin {
+    background: #0a66c2;
+    font-size: 1.5rem;
+}
+
+.home-social-mail {
+    background: #d64a3a;
+}
+
+.home-resume-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    padding: 0.85rem 1.4rem;
+    border-radius: 10px;
+    background: #08276c;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-resume-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(8, 39, 108, 0.35);
+}
+
 /* Experience / Education list (inner pages) */
 .content-section {
     background: var(--bg-secondary);
     position: relative;
 }
 
+.experience-points {
+    margin: 0;
+    padding-left: 1.5rem;
+    text-align: left;
+    list-style-position: outside;
+}
+
+.timeline-item-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.timeline-item-header-left {
+    flex: 0 0 42%;
+    min-width: 260px;
+}
+
+.timeline-item-header-right {
+    flex: 1;
+    min-width: 280px;
+}
+
+.experience-details {
+    margin-top: 1rem;
+    color: var(--text-primary);
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+    .timeline-item-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .timeline-item-header-left,
+    .timeline-item-header-right {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+}
+
 .timeline-list {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -1071,6 +1198,8 @@ section {
     opacity: 0;
     border: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
+    text-decoration: none;
+    min-height: 280px;
 }
 
 .portfolio-item.animate {
@@ -1083,62 +1212,13 @@ section {
     box-shadow: var(--shadow-2xl);
 }
 
-.portfolio-image {
-    width: 100%;
-    height: 180px;
-    background: var(--gradient-primary);
-    position: relative;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-}
-
-.portfolio-item:nth-child(1) .portfolio-image {
-    background-image: url('images/working-business-women.jpg');
-}
-
-.portfolio-item:nth-child(2) .portfolio-image {
-    background-image: url('images/computer-desk-stickers.jpg');
-}
-
-.portfolio-item:nth-child(3) .portfolio-image {
-    background-image: url('images/curved-display-pinky-girl.jpg');
-}
-
-.portfolio-item:nth-child(4) .portfolio-image {
-    background-image: url('images/dashboard-interfaces-transparent-displays.jpg');
-}
-
-.portfolio-item:nth-child(5) .portfolio-image {
-    background-image: url('images/marketing-strategy-women.jpg');
-}
-
-.portfolio-item:nth-child(6) .portfolio-image {
-    background-image: url('images/portfolio-website-girl.jpg');
-}
-
-.portfolio-image::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 100%);
-    transition: all 0.3s ease;
-}
-
-.portfolio-item:hover .portfolio-image::before {
-    background: linear-gradient(135deg, rgba(124, 58, 237, 0.4) 0%, rgba(124, 58, 237, 0.3) 100%);
-}
-
 .portfolio-content {
-    padding: 2rem;
+    padding: 1.8rem;
 }
 
 .portfolio-content h4 {
     font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     margin-bottom: 1rem;
     color: var(--text-primary);
     font-weight: 600;
@@ -1148,12 +1228,25 @@ section {
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
     line-height: 1.7;
+    font-size: 1rem;
 }
 
 .portfolio-tech {
     display: flex;
     gap: 0.75rem;
     flex-wrap: wrap;
+    align-items: center;
+}
+
+.tech-logo {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.portfolio-item:hover .tech-logo {
+    transform: translateY(-1px);
 }
 
 .tech-tag {
@@ -1663,6 +1756,104 @@ section {
 .contact-logo-link svg {
     width: 40px;
     height: 40px;
+}
+
+.page-contact .content-section {
+    background: var(--bg-secondary);
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+
+.contact-hero-card {
+    border: none;
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-hero-description {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2.25rem;
+    font-weight: 500;
+}
+
+.contact-hero-links {
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contact-hero-links .contact-logo-link {
+    width: 52px;
+    height: 52px;
+    border-radius: 999px;
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.contact-hero-links .contact-logo-link svg {
+    width: 26px;
+    height: 26px;
+}
+
+.contact-logo-github {
+    background: #171717;
+}
+
+.contact-logo-linkedin {
+    background: #0a66c2;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.contact-logo-mail {
+    background: #d64a3a;
+    line-height: 1;
+}
+
+.contact-hero-resume {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    border-radius: 14px;
+    background: #08276c;
+    color: #f8fbff;
+    text-decoration: none;
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    letter-spacing: 2px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-hero-resume:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(8, 39, 108, 0.25);
+}
+
+@media (max-width: 768px) {
+    .page-contact .content-section {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .contact-hero-description {
+        font-size: 1.1rem;
+        line-height: 1.8;
+    }
+
+    .contact-hero-links .contact-logo-link {
+        width: 52px;
+        height: 52px;
+        font-size: 1.7rem;
+    }
+
+    .contact-hero-links .contact-logo-link svg {
+        width: 26px;
+        height: 26px;
+    }
 }
 
 .contact-intro {
