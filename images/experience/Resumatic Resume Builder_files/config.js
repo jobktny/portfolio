@@ -1,0 +1,7 @@
+(function() {
+  window._POSTHOG_REMOTE_CONFIG = window._POSTHOG_REMOTE_CONFIG || {};
+  window._POSTHOG_REMOTE_CONFIG['phc_30W57cjU6y0mIT0wKmE7l1rUk4MzJNOGPadAuFBjeK4'] = {
+    config: {"analytics": {"endpoint": "/i/v0/e/"}, "autocaptureExceptions": true, "autocapture_opt_out": false, "captureDeadClicks": false, "capturePerformance": {"network_timing": true, "web_vitals": false, "web_vitals_allowed_metrics": null}, "conversations": false, "defaultIdentifiedOnly": true, "elementsChainAsString": true, "errorTracking": {"autocaptureExceptions": true, "errorTrackingAutocaptureTriggers": null, "suppressionRules": []}, "hasFeatureFlags": false, "heatmaps": false, "logs": {"captureConsoleLogs": false}, "productTours": false, "sessionRecording": {"consoleLogRecordingEnabled": true, "endpoint": "/s/", "eventTriggers": [], "linkedFlag": null, "masking": {"maskAllInputs": true}, "minimumDurationMilliseconds": null, "networkPayloadCapture": null, "recorderVersion": "v2", "sampleRate": null, "scriptConfig": {"script": "posthog-recorder"}, "triggerMatchType": null, "urlBlocklist": [], "urlTriggers": []}, "supportedCompression": ["gzip", "gzip-js"], "surveys": false, "token": "phc_30W57cjU6y0mIT0wKmE7l1rUk4MzJNOGPadAuFBjeK4"},
+    siteApps: []
+  }
+})();
